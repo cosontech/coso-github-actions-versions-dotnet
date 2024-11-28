@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const xmlConvert = require('xml-js');
 
 export function processCsProj(csprojFilePath, versionSemantic, versionBuild) {
