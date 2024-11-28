@@ -29987,6 +29987,7 @@ var __webpack_exports__ = {};
 
 ;// CONCATENATED MODULE: ./src/processing.js
 const fs = __nccwpck_require__(9896);
+const path = __nccwpck_require__(6928);
 const xmlConvert = __nccwpck_require__(3675);
 
 function processCsProj(csprojFilePath, versionSemantic, versionBuild) {
