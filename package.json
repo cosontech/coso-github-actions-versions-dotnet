@@ -1,0 +1,39 @@
+{
+  "name": "coso-github-actions-versions-dotnet",
+  "description": "Set version numbers in dotnet project files (csproj, sqlproj, wapproj/appxmanifest)",
+  "version": "1.0.0",
+  "author": "COSONTECH",
+  "private": true,
+  "homepage": "https://github.com/cosontech/coso-github-actions-versions-dotnet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosontech/coso-github-actions-versions-dotnet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cosontech/coso-github-actions-versions-dotnet/issues"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "Versioning",
+    ".Net"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "scripts": {
+    "package": "npx ncc build src/index.js -o dist --license licenses.txt"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3"
+  }
+}

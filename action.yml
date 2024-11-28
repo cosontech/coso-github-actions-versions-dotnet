@@ -1,0 +1,22 @@
+name: 'Set version in dotnet project files'
+description: 'Set version numbers in dotnet project files (csproj, sqlproj, wapproj/appxmanifest)'
+author: 'COSONTECH'
+
+inputs:
+  version-semantic:
+    description: 'Version Number - Semantic'
+    required: true
+  version-build:
+    description: 'Version Number - Build'
+    required: true
+  root-directory:
+    description: 'Path of the root directory that contains project files (use the environment variable github.workspace for root)'
+    required: true
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'code'  
+  color: 'blue'
